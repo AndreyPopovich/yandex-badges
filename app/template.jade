@@ -11,3 +11,17 @@ html
 
     header.header
       h1.header__name= name
+
+    main.content
+      h3.caption Достижения сотрудника
+
+      ul.achievs
+
+        each badge, index in badges
+          li.achiev
+
+            .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
+              .badge__content
+              .badge__number= index + 1
+
+            h4.achiev__title= badge.title

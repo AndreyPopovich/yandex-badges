@@ -8,3 +8,14 @@
 
   &:after
     clear: both
+
+=badge-color($color, $bg)
+  color: $color
+  border-color: $color
+
+  &.badge--with-number:after
+    background: $bg
+    border-color: $color
+
+  .badge__content
+    background: $bg

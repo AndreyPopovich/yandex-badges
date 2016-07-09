@@ -1,0 +1,59 @@
+.badge
+  display: block
+  width: $badge-size - $badge-border-width * 2
+  height: $badge-size - $badge-border-width * 2
+  border-width: $badge-border-width
+  border-style: $badge-border-style
+  border-color: $badge-default-color
+  border-radius: 50%
+  position: relative
+  color: $badge-default-color
+
+  .badge__number
+    display: none
+
+  &.badge--with-number
+    margin-right: $badge-offset
+    margin-bottom: $badge-offset
+
+    &:after
+      content: ""
+      display: block
+      width: $badge-number-size - $badge-border-width * 2
+      height: $badge-number-size - $badge-border-width * 2
+      border-width: $badge-border-width
+      border-style: $badge-border-style
+      border-color: $badge-default-color
+      border-radius: 50%
+      position: absolute
+      right: -($badge-border-width + $badge-offset)
+      bottom: -($badge-border-width + $badge-offset)
+      background: $badge-default-bg
+
+    .badge__number
+      display: block
+      text-align: center
+      font-weight: bold
+      z-index: $badge-number-z-index
+      width: $badge-number-size
+      line-height: $badge-number-size
+      position: absolute
+      right: -($badge-border-width + $badge-offset)
+      bottom: -($badge-border-width + $badge-offset)
+      font-size: $badge-number-font-size
+
+  &.badge--blue
+    +badge-color($badge-blue-color, $badge-blue-bg)
+
+  &.badge--purple
+    +badge-color($badge-purple-color, $badge-purple-bg)
+
+  .badge__content
+    background: $badge-default-bg
+    border-radius: 50%
+    z-index: $badge-content-z-index
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
