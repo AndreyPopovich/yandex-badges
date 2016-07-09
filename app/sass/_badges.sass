@@ -52,8 +52,21 @@
     background: $badge-default-bg
     border-radius: 50%
     z-index: $badge-content-z-index
+    overflow: hidden
+    line-height: $badge-size - $badge-border-width * 2
+    text-align: center
+    font-size: $badge-font-size
     position: absolute
     top: 0
     bottom: 0
     left: 0
     right: 0
+
+    img
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      +img-responsive($max-width: $badge-image-max-width)

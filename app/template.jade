@@ -22,6 +22,11 @@ html
 
             .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
               .badge__content
+                if badge.image
+                  img(src=badge.image)
+                else
+                  | ?
+
               .badge__number= index + 1
 
-            h4.achiev__title= badge.title
+            h4.achiev__title(title=badge.title)= badge.title

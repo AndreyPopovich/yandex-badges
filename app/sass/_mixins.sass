@@ -19,3 +19,8 @@
 
   .badge__content
     background: $bg
+
+=img-responsive($display: block, $max-width: 100%)
+  display: $display
+  max-width: $max-width // Part 1: Set a maximum relative to the parent
+  height: auto // Part 2: Scale the height according to the width, otherwise you get stretching

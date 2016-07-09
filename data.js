@@ -3,6 +3,7 @@ module.exports = {
     name: 'Андрей Попович',
     badges: [
       {
+        image: 'images/badges/accept-tick-icon-12.png',
         color: 'purple',
         title: 'Test badge'
       },
