@@ -1,0 +1,21 @@
+{
+  "name": "yandex-badges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Popovich",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.2",
+    "jade": "^1.11.0",
+    "mkdirp": "^0.5.1",
+    "run-sequence": "^1.2.2"
+  }
+}

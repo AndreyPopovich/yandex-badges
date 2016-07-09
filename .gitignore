@@ -1,0 +1,16 @@
+# MacOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.idea/
+*.iws
+.idea_modules/
+
+# Node.js
+node_modules/
+
+# Project
+dist/
