@@ -1,4 +1,6 @@
 module.exports = {
+  maxCount: 100,
+
   employees: {
     'apopovich': {
       name: 'Андрей Попович',

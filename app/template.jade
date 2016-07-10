@@ -28,15 +28,16 @@ html
         ul.achievs
 
           each badge, index in employee.badges
-            li.achiev
+            if index < maxCount
+              li.achiev
 
-              .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
-                .badge__content
-                  if badge.image
-                    img(src=badge.image)
-                  else
-                    | ?
+                .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
+                  .badge__content
+                    if badge.image
+                      img(src=badge.image)
+                    else
+                      | ?
 
-                .badge__number= index + 1
+                  .badge__number= index + 1
 
-              h4.achiev__title(title=badge.title)= badge.title
+                h4.achiev__title(title=badge.title)= badge.title
