@@ -1,32 +1,42 @@
+- var employee = employees[current]
 doctype html
 html
   head
     meta(charset='utf-8')
 
-    title #{name} — Сотрудник компании
+    title #{employee.name} — Сотрудник компании
     link(rel='stylesheet', href='vendor/normalize-css/normalize.css')
     link(rel='stylesheet', href='css/style.css')
 
   body
 
+    nav.navigation
+      .container
+        ul
+          each employee, index in employees
+            li(class=index == current ? 'active' : '')
+              a(href="#{index}.html")= employee.name
+
     header.header
-      h1.header__name= name
+      h1.header__name= employee.name
+      a.header__link(href="#{current}.html")= '@' + current
 
     main.content
-      h3.caption Достижения сотрудника
+      .container
+        h3.caption Достижения сотрудника
 
-      ul.achievs
+        ul.achievs
 
-        each badge, index in badges
-          li.achiev
+          each badge, index in employee.badges
+            li.achiev
 
-            .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
-              .badge__content
-                if badge.image
-                  img(src=badge.image)
-                else
-                  | ?
+              .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
+                .badge__content
+                  if badge.image
+                    img(src=badge.image)
+                  else
+                    | ?
 
-              .badge__number= index + 1
+                .badge__number= index + 1
 
-            h4.achiev__title(title=badge.title)= badge.title
+              h4.achiev__title(title=badge.title)= badge.title

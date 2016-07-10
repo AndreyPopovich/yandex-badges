@@ -53,9 +53,11 @@ gulp.task('jade', function(done) {
       return done(e);
     }
 
-    for (var index in data) {
-      if (data.hasOwnProperty(index)) {
-        fs.writeFileSync(path.join(PATHS.jade.dest, index + '.html'), compiled(data[index]));
+    var employees = data.employees;
+    for (var index in employees) {
+      if (employees.hasOwnProperty(index)) {
+        data.current = index;
+        fs.writeFileSync(path.join(PATHS.jade.dest, index + '.html'), compiled(data));
       }
     }
 
