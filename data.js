@@ -1,3 +1,28 @@
+var lorem = require('lorem-ipsum');
+
+var COLORS = ['default', 'blue', 'purple', 'red', 'green'];
+
+function generateBadges() {
+  var sentences = lorem({
+    count: 150,
+    units: 'sentences'
+  }).split('. ');
+
+  var colorsCount = COLORS.length;
+  return sentences.map(function(sentence) {
+    var badge = {
+      title: sentence
+    };
+
+    var color = COLORS[Math.floor(Math.random() * colorsCount)];
+    if (color != 'default') {
+      badge.color = color;
+    }
+
+    return badge;
+  });
+}
+
 module.exports = {
   maxCount: 100,
 
@@ -29,7 +54,7 @@ module.exports = {
 
     'ivanov': {
       name: 'Иван Иванов',
-      badges: []
+      badges: generateBadges()
     }
   }
 };
