@@ -2,24 +2,20 @@
   margin: 0
   padding: 0
 
-  .achiev
-    display: block
-    padding: $achiev-padding
-    margin: $achiev-margin
-    background: $achiev-bg
-    color: $achiev-color
+.achiev
+  display: block
+  padding: $achiev-padding
+  margin: $achiev-margin
+  background: $achiev-bg
+  color: $achiev-color
+  +clearfix
 
-    +clearfix
-
-    .achiev__title
-      float: left
-      margin: $achiev-element-margin
-      font-size: $achiev-title-font-size
-      line-height: $badge-size
-
-  .badge
+  &__badge
     float: left
     margin: $achiev-element-margin
 
-    &.badge--with-number
-      margin-right: nth($achiev-element-margin, 2) + $badge-offset
+  &__title
+    float: left
+    margin: $achiev-element-margin
+    line-height: $badge-size
+    font-size: $achiev-title-font-size

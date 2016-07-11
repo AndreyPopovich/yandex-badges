@@ -31,13 +31,14 @@ html
             if index < maxCount
               li.achiev
 
-                .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
-                  .badge__content
-                    if badge.image
-                      img(src=badge.image)
-                    else
-                      | ?
+                .achiev__badge
+                  .badge.badge--with-number(class=badge.color ? "badge--#{badge.color}" : "")
+                    .badge__content
+                      if badge.image
+                        img(src=badge.image)
+                      else
+                        | ?
 
-                  .badge__number= index + 1
+                    .badge__number= index + 1
 
                 h4.achiev__title(title=badge.title)= badge.title

@@ -76,7 +76,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', function (done) {
-  runSequence('clean:dist',
+  runSequence('clean',
     ['sass', 'images', 'jade'],
     done
   );

@@ -5,7 +5,8 @@ var COLORS = ['default', 'blue', 'purple', 'red', 'green'];
 function generateBadges() {
   var sentences = lorem({
     count: 150,
-    units: 'sentences'
+    units: 'sentences',
+    sentenceUpperBound: 5
   }).split('. ');
 
   var colorsCount = COLORS.length;
