@@ -12,20 +12,23 @@ bower install
 ```
 
 ###Примеры использования
-1. Ачивка без номера
+
+####Ачивка без номера
 ```html
 <div class="badge">
   <div class="badge__content"></div>
 </div>
 ```
-2. Изменение цвета ачивки
+
+####Изменение цвета ачивки
 ```html
 <div class="badge badge--blue">
   <div class="badge__content"></div>
 </div>
 ```
 Доступные цвета: blue, purple, red, green
-2. Ачивка с картинкой
+
+####Ачивка с картинкой
 ```html
 <div class="badge badge--blue">
   <div class="badge__content">
@@ -33,7 +36,8 @@ bower install
   </div>
 </div>
 ```
-3. Ачивка с номером
+
+####Ачивка с номером
 ```html
 <div class="badge badge--blue badge--with-number">
   <div class="badge__content"></div>
