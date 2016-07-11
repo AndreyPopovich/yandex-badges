@@ -13,4 +13,5 @@
 node_modules/
 
 # Project
-dist/
+#dist/
+dist/vendor

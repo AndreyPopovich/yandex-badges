@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.container {
+  width: 900px;
+  margin: 0 auto; }
+
+.content {
+  padding: 15px; }
+
+.caption {
+  color: #c7c7c7;
+  font-size: 0.9em;
+  text-transform: uppercase; }
+
+.navigation {
+  background: #efa100; }
+  .navigation ul {
+    padding: 0;
+    margin: 0; }
+    .navigation ul li {
+      display: inline-block;
+      padding: 5px 15px; }
+      .navigation ul li.active {
+        background: #ffb723; }
+      .navigation ul li a {
+        color: #fff; }
+
+.header {
+  text-align: center;
+  color: #fff;
+  background: #ffb723;
+  padding: 30px 0;
+  zoom: 1; }
+  .header:before, .header:after {
+    content: "";
+    display: table; }
+  .header:after {
+    clear: both; }
+  .header__name {
+    font-size: 3em;
+    margin: 0; }
+  .header__link {
+    color: #fff;
+    font-size: 1.5em; }
+
+.achievs {
+  margin: 0;
+  padding: 0; }
+
+.achiev {
+  display: block;
+  padding: 10px 0;
+  margin: 15px 0;
+  background: #fbfbfb;
+  color: #525252;
+  zoom: 1; }
+  .achiev:before, .achiev:after {
+    content: "";
+    display: table; }
+  .achiev:after {
+    clear: both; }
+  .achiev__badge {
+    float: left;
+    margin: 0 15px; }
+  .achiev__title {
+    float: left;
+    margin: 0 15px;
+    line-height: 100px;
+    font-size: 1.5em; }
+
+.badge {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffb723;
+  border-radius: 50%;
+  position: relative;
+  color: #ffb723; }
+  .badge__number {
+    display: none; }
+  .badge--with-number {
+    margin-right: 2px;
+    margin-bottom: 2px; }
+    .badge--with-number:after {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 34px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #ffb723;
+      border-radius: 50%;
+      position: absolute;
+      right: -7px;
+      bottom: -7px;
+      background: #fbfbfb; }
+    .badge--with-number .badge__number {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      z-index: 10;
+      width: 44px;
+      line-height: 44px;
+      position: absolute;
+      right: -7px;
+      bottom: -7px;
+      font-size: 1.2em; }
+  .badge--blue {
+    color: #8eb7cf;
+    border-color: #8eb7cf; }
+    .badge--blue.badge--with-number:after {
+      background: #f3f8fa;
+      border-color: #8eb7cf; }
+    .badge--blue .badge__content {
+      background: #f3f8fa; }
+  .badge--purple {
+    color: #af9db7;
+    border-color: #af9db7; }
+    .badge--purple.badge--with-number:after {
+      background: #f7f5f8;
+      border-color: #af9db7; }
+    .badge--purple .badge__content {
+      background: #f7f5f8; }
+  .badge--red {
+    color: #ed5d37;
+    border-color: #ed5d37; }
+    .badge--red.badge--with-number:after {
+      background: #fbfbef;
+      border-color: #ed5d37; }
+    .badge--red .badge__content {
+      background: #fbfbef; }
+  .badge--green {
+    color: #479162;
+    border-color: #479162; }
+    .badge--green.badge--with-number:after {
+      background: #f6f6f8;
+      border-color: #479162; }
+    .badge--green .badge__content {
+      background: #f6f6f8; }
+  .badge__content {
+    background: #fbfbfb;
+    border-radius: 50%;
+    z-index: 9;
+    overflow: hidden;
+    line-height: 90px;
+    text-align: center;
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .badge__content img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      height: auto; }
